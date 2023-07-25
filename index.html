@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <link rel="shortcut icon" href="images/fruit1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        "lato": "Lato, sans-serif"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+
+<body class="font-lato">
+    <header class="lg:container mx-auto ">
+        <nav class=" lg:bg-[#F85559] rounded-full py-4 lg:px-[50px] px-4">
+            <div class="navbar flex-row-reverse lg:flex-row ">
+                <div class="navbar-start  w-[40%] justify-end lg:justify-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content  z-[1] p-2 shadow bg-base-100 rounded-box w-52 ml-[-157px] mt-6 bg-gray-200">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <li> <input class=" rounded-full bg-white py-[18px] pl-7 2xl:pr-[287px] relative "
+                                    type="text" name="" id="" placeholder="Search here"> <i
+                                    class="fa-solid fa-magnifying-glass absolute text-xl top-[12px] right-[14px] "></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a class="text-white text-lg font-medium">Home</a></li>
+                            <li><a class="text-white text-lg font-medium">About Us</a></li>
+                            <li><a class="text-white text-lg font-medium">Shop</a></li>
+                            <li><a class="text-white text-lg font-medium">All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" w-[60%] flex items-center justify-between">
+                    <div class="">
+                        <div class="flex items-center"><img class="w-[28px] lg:w-[50px]" src="images/logo.png" alt="">
+                            &nbsp;<span class="font-bold lg:text-white lg:text-5xl  text-xl">Fruit Burst</span></div>
+                    </div>
+                    <div class="hidden lg:block relative">
+                        <input class=" rounded-full bg-white py-[18px] pl-7 2xl:pr-[287px] " type="text" name="" id=""
+                            placeholder="Search here">
+                        <i class="fa-solid fa-magnifying-glass absolute text-xl top-[16px] right-[17px] bottom-0 "></i>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Banner section -->
+        <section class="lg:my-10 relative">
+            <div class="carousel w-full h-[60vh]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <!-- Banner1 -->
+                    <div
+                        class="bg-[linear-gradient(to_right_bottom,rgba(7,3,3,0.6),rgba(16,71,52,0.0)),url('images/banner1.png')] w-full flex items-center justify-center bg-cover bg-no-repeat bg-current rounded-md ">
+                        <div class="text-center p-[27px]">
+                            <h1 class="font-extrabold text-white lg:text-7xl text-2xl">Exotic tastes at your <br>
+                                doorstep</h1>
+                            <p class="font-medium lg:text-xl text-sm text-white my-6">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="bg-[#F85559] lg:px-[30px] lg:py-4 py-[9px] px-[18px] lg:text-xl text-lg text-white rounded-md">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <!-- Banner2 -->
+                    <div
+                        class="bg-[linear-gradient(to_right_bottom,rgba(7,3,3,0.6),rgba(16,71,52,0.0)),url('images/banner2.png')] w-full flex items-center justify-center bg-cover bg-no-repeat bg-current rounded-md ">
+                        <div class="text-center p-[27px]">
+                            <h1 class="font-extrabold text-white lg:text-7xl text-2xl">Exotic tastes at your <br>
+                                doorstep</h1>
+                            <p class="font-medium lg:text-xl text-sm text-white my-6">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="bg-[#F85559] lg:px-[30px] lg:py-4 py-[9px] px-[18px] lg:text-xl text-lg text-white rounded-md">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <!-- Banner3 -->
+                    <div
+                        class="bg-[linear-gradient(to_right_bottom,rgba(7,3,3,0.6),rgba(16,71,52,0.0)),url('images/banner3.png')] w-full flex items-center justify-center bg-cover bg-no-repeat bg-current rounded-md ">
+                        <div class="text-center p-[27px]">
+                            <h1 class="font-extrabold text-white lg:text-7xl text-2xl">Exotic tastes at your <br>
+                                doorstep</h1>
+                            <p class="font-medium lg:text-xl text-sm text-white my-6">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="bg-[#F85559] lg:px-[30px] lg:py-4 py-[9px] px-[18px] lg:text-xl text-lg text-white rounded-md">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <!-- Banner4 -->
+                    <div
+                        class="bg-[linear-gradient(to_right_bottom,rgba(7,3,3,0.6),rgba(16,71,52,0.0)),url('images/banner4.png')] w-full flex items-center justify-center bg-cover bg-no-repeat bg-current rounded-md ">
+                        <div class="text-center p-[27px]">
+                            <h1 class="font-extrabold text-white lg:text-7xl text-2xl">Exotic tastes at your <br>
+                                doorstep</h1>
+                            <p class="font-medium lg:text-xl text-sm text-white my-6">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="bg-[#F85559] lg:px-[30px] lg:py-4 py-[9px] px-[18px] lg:text-xl text-lg text-white rounded-md">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <section class="hidden lg:block absolute left-[10%] bottom-[-90px] lg:left-[4%] 2xl:left-[11%]">
+                <div
+                    class="flex items-center justify-center gap-10 bg-white shadow-lg shadow-gray-300 xl:w-[1196px] lg:w-[950px]  rounded-md">
+                    <div class="p-6 text-center "><img src="images/fruit1.png" alt=""><span>Strawberry</span></div>
+                    <div class="p-6 text-center "><img src="images/fruit2.png" alt=""><span>Strawberry</span></div>
+                    <div class="p-6 text-center "><img src="images/fruit3.png" alt=""><span>Strawberry</span></div>
+                    <div class="p-6 text-center "><img src="images/fruit4.png" alt=""><span>Strawberry</span></div>
+                    <div class="p-6 text-center "><img src="images/fruit5.png" alt=""><span>Strawberry</span></div>
+                    <div class="p-6 text-center "><img src="images/fruit6.png" alt=""><span>Strawberry</span></div>
+                </div>
+            </section>
+        </section>
+    </header>
+    <!-- Main Section -->
+    <main class="container mx-auto">
+        <article class="mt-[10%]">
+            <section class="flex items-center justify-between flex-col lg:flex-row text-center lg:text-left">
+                <div class="flex-1">
+                    <h3 class="text-[#121212] text-5xl font-extrabold">Deal of the day</h3>
+                    <p class="text-base font-medium text-[#12121299] my-6 px-10 lg:p-0">Contrary to popular belief, is
+                        not simply random
+                        text. It has roots in a piece of classical <br>
+                        Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex gap-3 flex-1 justify-end items-center">
+                    <div class="text-center">
+                        <h5 class="text-[#121212] text-5xl font-extrabold">29</h5>
+                        <p class="text-base font-medium text-[#12121299]">Days</p>
+                    </div>
+                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div class="text-center">
+                        <h5 class="text-[#121212] text-5xl font-extrabold">15</h5>
+                        <p class="text-base font-medium text-[#12121299]">Hours</p>
+                    </div>
+                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div class="text-center">
+                        <h5 class="text-[#121212] text-5xl font-extrabold">25</h5>
+                        <p class="text-base font-medium text-[#12121299]">Minutes</p>
+                    </div>
+                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div class="text-center">
+                        <h5 class="text-[#121212] text-5xl font-extrabold">08</h5>
+                        <p class="text-base font-medium text-[#12121299]">Seconds</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- Deal of the day card -->
+        <article>
+            <section>
+                
+            </section>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
